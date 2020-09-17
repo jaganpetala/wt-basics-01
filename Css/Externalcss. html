@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+ <head>
+       <link rel="stylesheet" href="Style.css">
+ </head>
+  <body>
+    <h1>External css</h1>
+     <br/>
+     <h2>this is testing of external CSS</h2>
+     <br/>
+     <P>this is a paragraph </p><br/>
+        <a colour:green; href="../Index.html">backto index page</a><br/>
+  </body>
+</html>
