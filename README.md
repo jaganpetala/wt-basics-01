@@ -1,1 +1,1 @@
-HTML-BASICS
+Web technologies 
