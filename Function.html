@@ -1,0 +1,75 @@
+<html>
+<head>
+<title> Registration</title>
+<script type="text/javascript"> function validate()
+{
+re = /^[A-Za-z]+$/; if(!re.test(document.registration.name.value))
+{
+window.alert('Invalid Name.');
+}
+if(document.registration.pass.value.length<=6)
+{
+window.alert('Password is too short!');
+}
+if(document.registration.ph_no.value.length<10)
+{
+window.alert('Phone number not valid!');
+}
+var x=document.forms["registration"]["email"].value; var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+{
+window.alert("Invalid email!");
+}
+}
+</script>
+</head>
+
+<body>
+<h4 align="center">Registration</h4>
+<form name="registration" method="post" action="Registration.html">
+<table align="center" height="450">
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name" id="name" /></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="pass" id="pass" /></td>
+</tr>
+<tr>
+<td>E-mail ID:</td>
+<td><input type="email" name="email" /></td>
+</tr>
+<tr>
+<td>Phone number:</td>
+<td><input type="text" name="ph_no" /></td>
+</tr>
+<tr>
+<td>Sex:</td>
+<td><input type="radio" name="sex" value="male" /> Male
+<input type="radio" name="sex" value="female" /> Female</td>
+</tr>
+<tr>
+<td>Date of Birth (D M Y):</td>
+<td>
+<Input type="date" name="dob"/>
+</td>
+</tr>
+<tr>
+<td>Languages Known:</td>
+<td>
+<input type="checkbox" name="english" value="english" /> English
+<input type="checkbox" name="telugu" value="telugu" /> Telugu
+<input type="checkbox" name="hindi" value="telugu" /> Hindi
+<input type="checkbox" name="tamil" value="tamil" /> Tamil
+</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td><textarea rows="4" cols="30" name="address"></textarea> </td>
+</tr>
+<tr><td colspan="2" align="center">
+<input value="Register" type="submit" onClick="validate();" />
+</td></tr>
+</table></body></html>
