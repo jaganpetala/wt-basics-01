@@ -3,13 +3,13 @@
 <title> Registration</title>
 <script type="text/javascript"> function validate()
 {
-re = /^[A-Za-z]+$/; if(!re.test(document.registration.name.value))
+if(document.registration.name.value==0))
 {
 window.alert('Invalid Name.');
 }
-if(document.registration.pass.value.length<=6)
+if(document.registration.pass.value.length==0)
 {
-window.alert('Password is too short!');
+window.alert('Password required!');
 }
 if(document.registration.ph_no.value.length<10)
 {
